@@ -28,7 +28,7 @@ body{
 
 .navbar{
     padding: 20px 0;
-    box-shadow: 0 5px 30px 0 #000000;
+    box-shadow: 0 1px 10px 0 #787878;
     background-color: #ffffff;
     opacity: 0.9;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -310,18 +310,6 @@ body{
     padding: 130px 0 180px 0;
     position: relative;
   }
-
-  .brand::after{
-    content: "";
-    position: absolute;
-    background-image: url('../src/assets/elemen/elemen1.png');
-    width: 120px;
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    right: 15px;
-    bottom: 15px;
-  }
   
   .brand .container .row{
     flex-direction: column;
@@ -364,7 +352,6 @@ body{
     padding: 50px 0 0 0;
     color: white;
     position: relative;
-    box-shadow: 0 -2px 5px 0 grey;
   }
 
   footer::after{
@@ -381,21 +368,30 @@ body{
   footer .row {
     position: relative;
     z-index: 3;
+    padding-bottom: 8px;
   }
   
   footer .row .col-lg-5 h2{
-    font-family: "Chau Philomene One", sans-serif;
-    margin: 0 0 25px 0;
+    font-family: "Lato", sans-serif;
+    margin: 0 0 15px 0;
+    font-weight: 600;
   }
 
   footer .row .col-lg-5 ul li{
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 0;
+  }
+
+  footer .bottom p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
   }
 
   footer .bottom{
     position: relative;
     z-index: 3;
-    font-family: "Source Sans 3", sans-serif;
   }
 
 

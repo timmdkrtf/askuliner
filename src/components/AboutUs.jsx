@@ -10,7 +10,7 @@ export default function AboutUs(){
                         <img src={DudiPhoto} alt="" />
                     </div>
                     <div className="title">
-                        <h4>Dudi</h4>
+                        <h4>Dudi Supiandi</h4>
                         <h5>Dewan Komisaris</h5>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ export default function AboutUs(){
                             <br/>
                             <span>&</span>
                             <br/>
-                            Direksi Utama
+                            Direktur Utama
                         </h2>
                     </div>
                 </div>
@@ -30,8 +30,8 @@ export default function AboutUs(){
                         <img src={RhamdaniPhoto} alt="" />
                     </div>
                     <div className="title">
-                        <h4>Rhamdani</h4>
-                        <h5>Direksi Utama</h5>
+                        <h4>Andri Rhamdani</h4>
+                        <h5>Direktur Utama</h5>
                     </div>
                 </div>
             </div>
