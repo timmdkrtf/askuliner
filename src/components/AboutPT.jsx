@@ -3,10 +3,11 @@ export default function AboutPT(){
         <div className="about-pt">
             <div className="container">
                 <div className="content">
-                    <h2>Tentang Perusahaan</h2>
+                    <h2>Tentang Kami</h2>
                     <div className="text">
-                        <p>PT Abdi Saji Kuliner adalah perusahaan yang bergerak di bidang penyediaan makanan dan minuman. Sebagai anak perusahaan dari PT Thamrin Meyer Corporation, perusahaan ini berkomitmen untuk menghadirkan produk berkualitas dengan standar tinggi di industri kuliner. Dengan dukungan manajemen yang profesional, PT Abdi Saji Kuliner terus berkembang dan berinovasi untuk memenuhi kebutuhan konsumen.</p>
-                        <p>Perusahaan ini mengelola satu brand utama, Sajiner, yang menawarkan berbagai pilihan makanan dan minuman lezat. Sajiner hadir dengan konsep yang mengutamakan kualitas rasa, kebersihan, dan kepuasan pelanggan. Melalui inovasi berkelanjutan, PT Abdi Saji Kuliner berupaya menghadirkan produk yang tidak hanya menggugah selera, tetapi juga memberikan nilai lebih bagi masyarakat.</p>
+                        <p>PT Abdi Saji Kuliner didirikan pada tahun 2024. Kami adalah perusahaan yang bergerak di bidang food and beverages yang merupakan anak perusahaan dari Thamrin Meyer Corporation.</p>
+                        <p>Kami berkomitmen untuk menyediakan kuliner yang mengutamakan kehalalan dan thoyyib menciptakan pengalaman makan yang tidak hanya lezat, tetapi juga sehat dan berkualitas.</p>
+                        <p>Kami hadir sebagai wadah yang terus berinovasi dan mempertahankan komitmen terhadap kehalalan serta thoyyib terhadap kuliner untuk membangun loyalitas konsumen.</p>
                     </div>
                 </div>
             </div>

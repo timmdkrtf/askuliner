@@ -1,4 +1,4 @@
-.landing {
+/* .landing {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -20,7 +20,7 @@
 
 .landing .content img{
   width: 250px;
-}
+} */
 
 body{
     overflow-x: hidden;
@@ -61,10 +61,18 @@ body{
   .cover{
     height: 100vh;
     position: relative;
-    background-image: url('../src/assets/image/bg/bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
   }
 
   .cover .content-container{
@@ -82,20 +90,19 @@ body{
   .cover .content-container .content img{
     width: 300px;
     padding: 30px 25px;
-    background-color: #ffffff;
     border-radius: 10px;
     z-index: 4;
   }
 
   .cover .content-container .content p{
-    font-family: "Chau Philomene One", sans-serif;
+    font-family: "Lato", sans-serif;
     padding: 10px 20px;
     width: fit-content;
-    margin: 10px auto 0 auto;
+    margin: 5px auto 0 auto;
     background-color: #c80017;
     color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 3px 0 0 #ffffff;
+    box-shadow: 0 4px 0 0 #8e8e8e;
   }
 
   .about-pt{
@@ -116,7 +123,7 @@ body{
   }
 
   .about-pt .content h2{
-    font-family: "Chau Philomene One", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 600;
     margin: 0 0 15px 0;
     color: #c80017;
@@ -125,184 +132,149 @@ body{
   }
 
   .about-pt .content .text p{
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-align: justify;
   }
 
   .about-us{
-    height: 700px;
     box-shadow: 0 0 10px 0 #919191;
     z-index: 1;
     position: relative;
     background-image: url('../src/assets/image/bg/bg2.png');
+    background-size: cover;
+    padding: 70px 0;
+  }
+
+  .about-us::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    top: 0;
+    z-index: -1;
+  }
+
+  .about-us .title{
+    text-align: center;
+  }
+
+  .about-us .title h2{
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 auto 0 auto;
+    padding: 20px 30px;
+    position: relative;
+    color: black;
+    display: inline-block;
+  }
+
+  .about-us .title h2 span{
+    color: #c80017;
   }
 
   .about-us .row{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
   }
 
   .about-us .row .content-left{
-    width: 33%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     position: relative;
-  }
-
-  .about-us .row .content-left::after{
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: 2;
-  }
-
-  .about-us .row .content-left .cover-image{
-    width: 70%;
-    height: 400px;
-    background-color: #ffffff;
-    overflow: hidden;
-    border: 5px solid #c80017;
-    border-radius: 10px;
-    position: relative;
-    z-index: 3;
+    padding: 0;
   }
 
   .about-us .row .content-left .cover-image img{
-    width: 350px;
-    margin: 30px 0 0 -60px;
+    width: 400px;
+    margin: 30px 0 0 0;
+    text-align: start;
   }
 
   .about-us .row .content-left .title{
+    color: #000000;
     width: 100%;
-    margin: 20px 0 0 0;
-    text-align: center;
-    position: relative;
-    z-index: 3;
+    text-align: start;
+    background-color: #ffffff;
+    transform: translate(170px, -80px);
+    padding: 30px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 4px 4px 0 0 #FBB342;
   }
 
   .about-us .row .content-left .title h4{
-    font-family: "Chau Philomene One", sans-serif;
+    font-family: "Lato", sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0;
     position: relative;
     display: inline-block;
     color: #c80017;
+    font-size: 28px;
   }
 
   .about-us .row .content-left .title h5{
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 5px 0 0 0;
-    font-size: 18px;
-    color: #191919;
+    font-size: 20px;
+    color: #454545;
     opacity: 0.9;
   }
 
-  .about-us .row .content-center{
-    width: 34%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-  }
-
-  .about-us .row .content-center::after{
-    content: "";
-    position: absolute;
-    background-color: #c80017;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: 2;
-  }
-
-  .about-us .row .content-center .title h2{
-    color: #ffffff;
-    font-family: "Chau Philomene One", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 55px;
-    position: relative;
-    z-index: 3;
-  }
-
-  .about-us .row .content-center .title h2 span{
-    font-size: 50px;
-    font-weight: 400;
-    font-family: "Source Sans 3", sans-serif;
-  }
-
   .about-us .row .content-right{
-    width: 33%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     flex-direction: column;
     position: relative;
-  }
-
-  .about-us .row .content-right::after{
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: 2;
-  }
-
-  .about-us .row .content-right .cover-image{
-    width: 70%;
-    height: 400px;
-    overflow: hidden;
-    background-color: #ffffff;
-    border: 5px solid #c80017;
-    border-radius: 10px;
-    position: relative;
-    z-index: 3;
+    padding: 0;
   }
 
   .about-us .row .content-right .cover-image img{
     width: 400px;
-    margin: 35px 0 0 -10px;
+    margin: 35px 0 0 0;
+    text-align: end;
   }
 
   .about-us .row .content-right .title{
+    color: #000000;
     width: 100%;
-    text-align: center;
-    margin: 20px 0 0 0;
-    z-index: 3;
+    text-align: end;
+    background-color: #ffffff;
+    transform: translate(-130px, -80px);
+    padding: 25px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: -4px 4px 0 0 #FBB342;
   }
 
   .about-us .row .content-right .title h4{
-    font-family: "Chau Philomene One", sans-serif;
+    font-family: "Lato", sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0;
     color: #c80017;
+    font-size: 28px;
   }
 
   .about-us .row .content-right .title h5{
-    font-family: "Source Sans 3", sans-serif;
-    margin: 5px 0 0 0 ;
-    font-size: 18px;
-    color: #191919;
+    font-family: "Open Sans", sans-serif;
+    margin: 7px 0 0 0 ;
+    font-size: 20px;
+    color: #454545;
     opacity: 0.9;
   }
 
@@ -319,7 +291,7 @@ body{
   }
   
   .brand .container .row .title h2{
-    font-family: "Chau Philomene One", sans-serif;
+    font-family: "Lato", sans-serif;
     width: fit-content;
     margin: 0 auto;
     font-weight: 600;
@@ -396,16 +368,7 @@ body{
 
 
   @media screen and (max-width: 1200px) {
-    .about-us .row .content-left .cover-image{
-      width: 90%;
-    }
-    .about-us .row .content-right .cover-image{
-      width: 90%;
-    }
 
-    .about-us{
-      height: 650px;
-    }
   }
 
   @media screen and (max-width: 991px) {
@@ -419,48 +382,40 @@ body{
       width: 85%;
     }
 
-    .about-us .row .content-left .cover-image{
-      width: 95%;
-      height: 300px;
-    }
-
     .about-us .row .content-left .cover-image img{
-      width: 300px;
-      margin: 10px 0 0 -30px;
+      width: 350px;
+      margin: 0 0 0 -30px;
     }
 
-    .about-us .row .content-right .cover-image{
-      width: 95%;
-      height: 300px;
+    .about-us .row .content-left .title{
+      transform: translate(100px, -80px);
+      padding: 25px;
     }
 
     .about-us .row .content-right .cover-image img{
-      width: 280px;
-      margin: 30px 0 0 -10px;
+      width: 350px;
+      margin: 0 0 0 -30px;
     }
 
-    .about-us{
-      height: 550px;
+    .about-us .row .content-right .title{
+      transform: translate(-100px, -80px);
+      padding: 25px;
     }
 
     .about-us .row .content-left .title h4{
-      font-size: 20px;
+      font-size: 26px;
     }
-
+  
     .about-us .row .content-left .title h5{
-      font-size: 16px;
+      font-size: 18px;
     }
 
     .about-us .row .content-right .title h4{
-      font-size: 20px;
+      font-size: 26px;
     }
 
     .about-us .row .content-right .title h5{
-      font-size: 16px;
-    }
-
-    .about-us .row .content-center .title h2{
-      font-size: 28px;
+      font-size: 18px;
     }
   }
 
@@ -480,42 +435,61 @@ body{
 
     .about-us{
       height: fit-content;
-      padding: 0 0 70px 0;
+      padding: 70px 0;
+    }
+
+    .about-us .title h2{
+      font-size: 36px;
     }
 
     .about-us .row{
-      width: 100%;
       flex-direction: row;
-      gap: 60px 25px;
+      gap: 20px 30px;
       margin: 0 -24px 0 0;
-    }
-
-    .about-us .row .content-center{
-      width: 100%;
-      order: -1;
-      padding: 30px 0;
+      justify-content: center;
     }
 
     .about-us .row .content-left{
-      width: calc(50% - 30px);
-      padding: 0;
-      position: static;
+      width: calc(50% - 15px);
     }
 
-    .about-us .row .content-right{
-      width: calc(50% - 30px);
-      padding: 0;
+    .about-us .row .content-left .title{
+      transform: translate(80px, -70px);
+      padding: 25px;
     }
 
-    .about-us .row .content-right::after{
-      background-color: transparent;
-      width: 100%;
-      height: 100%;
+    .about-us .row .content-left .cover-image img{
+      width: 280px;
     }
 
     .about-us .row .content-right .cover-image img{
       width: 280px;
-      margin: 30px 0 0 20px;
+    }
+
+    .about-us .row .content-right{
+      width: calc(50% - 15px);
+      text-align: end;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-80px, -70px);
+      padding: 25px;
+    }
+
+    .about-us .row .content-left .title h4{
+      font-size: 22px;
+    }
+  
+    .about-us .row .content-left .title h5{
+      font-size: 16px;
+    }
+
+    .about-us .row .content-right .title h4{
+      font-size: 22px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 16px;
     }
 
     .brand {
@@ -534,20 +508,36 @@ body{
     }
 
     .about-us .row .content-left{
-      width: 80%;
+      width: 100%;
     }
     .about-us .row .content-right{
-      width: 80%;
+      width: 100%;
     }
 
     .about-us .row .content-left .cover-image img{
-      width: 350px;
-      margin: 10px 0 0 -20px;
+      width: 75%;
     }
 
     .about-us .row .content-right .cover-image img{
-      width: 400px;
-      margin: 20px 0 0 -20px;
+      width: 75%;
+    }
+
+    .about-us .row .content-left .title h4{
+      font-size: 24px;
+    }
+
+    .about-us .row .content-right .title h4{
+      font-size: 24px;
+    }
+
+    .about-us .row .content-left .title{
+      transform: translate(180px, -70px);
+      padding: 25px;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-150px, -70px);
+      padding: 25px;
     }
     
     .brand::after{
@@ -556,6 +546,18 @@ body{
       background-image: url('../src/assets/elemen/elemen1.png');
       width: 100px;
       height: 70px;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .about-us .row .content-left .title{
+      transform: translate(130px, -70px);
+      padding: 25px;
+    }
+
+    .about-us .row .content-right .title{
+      transform: translate(-110px, -70px);
+      padding: 25px;
     }
   }
 
@@ -582,14 +584,31 @@ body{
     .about-us .row .content-right{
       width: 100%;
     }
-    .about-us .row .content-left .cover-image img{
-      width: 350px;
-      margin: 10px 0 0 -50px;
+
+    .about-us .row .content-left .title{
+      transform: translate(80px, -70px);
+      padding: 15px 20px;
     }
 
-    .about-us .row .content-right .cover-image img{
-      width: 400px;
-      margin: 20px 0 0 -50px;
+    .about-us .row .content-right .title{
+      transform: translate(-50px, -70px);
+      padding: 15px 20px;
+    }
+
+    .about-us .row .content-left .title h4{
+      font-size: 20px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 14px;
+    }
+
+    .about-us .row .content-left .title h4{
+      font-size: 20px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 14px;
     }
 
     .footer .container .text-center p{

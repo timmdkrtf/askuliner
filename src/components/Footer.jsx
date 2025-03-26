@@ -38,7 +38,7 @@ export default function Footer(){
                 </div>
                 <div className="bottom">
                     <hr />
-                    <p className="text-end mb-0 Poppins">© 2025 PT Abdi Saji Kuliner &middot; All Rights Reserved</p>
+                    <p className="text-end mb-0">© 2025 PT Abdi Saji Kuliner &middot; All Rights Reserved</p>
                 </div>
             </div>
         </footer>
