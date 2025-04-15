@@ -1,4 +1,4 @@
-.landing {
+/* .landing {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -20,7 +20,7 @@
 
 .landing .content img{
   width: 250px;
-}
+} */
 
 body{
     overflow-x: hidden;
@@ -63,7 +63,8 @@ body{
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 100%;
+    background-position: center;
+    /* background-position: 100% 100%; */
     transition: opacity 0.5s ease-in-out;
   }
 
@@ -99,15 +100,27 @@ body{
     padding: 10px 20px;
     width: fit-content;
     margin: 5px auto 0 auto;
-    background-color: #c80017;
-    color: #ffffff;
+    background-color: #FBB342;
+    color: #c80017;
+    font-weight: 800;
     border-radius: 10px;
-    box-shadow: 0 4px 0 0 #8e8e8e;
   }
 
   .about-pt{
     padding: 80px 0 100px 0;
     position: relative;
+  }
+
+  .about-pt::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+    right: 30px;
+    background-color: #FBB342;
+    box-shadow: 5px 5px 0 0 #c80017;
   }
 
   .about-pt .container{
@@ -129,6 +142,7 @@ body{
     color: #c80017;
     position: relative;
     display: inline-block;
+    text-decoration: underline;
   }
 
   .about-pt .content .text p{
@@ -140,7 +154,7 @@ body{
     box-shadow: 0 0 10px 0 #919191;
     z-index: 1;
     position: relative;
-    background-image: url('../src/assets/image/bg/bg2.png');
+    background-image: url('../src/assets/image/bg/Bank\ Gambar\ Realtour\ \(5\).png');
     background-size: cover;
     padding: 70px 0;
   }
@@ -167,7 +181,7 @@ body{
     margin: 0 auto 0 auto;
     padding: 20px 30px;
     position: relative;
-    color: black;
+    color: #454545;
     display: inline-block;
   }
 
@@ -315,7 +329,7 @@ body{
   }
 
   footer{
-    background-image: url("../src/assets/image/bg/bg2.png");
+    background-image: url("../src/assets/image/bg/Bank\ Gambar\ Realtour\ \(5\).png");
     height: auto;
     width: 100%;
     background-repeat: no-repeat;

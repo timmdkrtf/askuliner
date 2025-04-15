@@ -1,5 +1,5 @@
-import RhamdaniPhoto from "../assets/image/photo/Frame 21.png"
-import DudiPhoto from "../assets/image/photo/Frame 16.png"
+import RhamdaniPhoto from "../assets/image/photo/Frame 24.png"
+import DudiPhoto from "../assets/image/photo/Frame 23.png"
 
 export default function AboutUs(){
     return(

@@ -1,11 +1,10 @@
 import askLogo from "../assets/image/logo/ask-main-p.png"
 import { useState, useEffect } from "react";
-import Room1 from "../assets/image/bg/1.png"
+import Room1 from "../assets/image/bg/4.png"
 import Room2 from "../assets/image/bg/2.png"
-import Room3 from "../assets/image/bg/bg1.png"
-// import Room4 from "../assets/image/bg/bg2.png"
+import Room3 from "../assets/image/bg/3.png"
 
-const images = [Room1, Room3, Room2];
+const images = [Room1, Room2, Room3];
 
 export default function Cover(){
 
