@@ -154,7 +154,7 @@ body{
     box-shadow: 0 0 10px 0 #919191;
     z-index: 1;
     position: relative;
-    background-image: url('../src/assets/image/bg/Bank\ Gambar\ Realtour\ \(5\).png');
+    background-image: url('../src/assets/image/bg/31.png');
     background-size: cover;
     padding: 70px 0;
   }
@@ -329,7 +329,7 @@ body{
   }
 
   footer{
-    background-image: url("../src/assets/image/bg/Bank\ Gambar\ Realtour\ \(5\).png");
+    background-image: url("../src/assets/image/bg/31.png");
     height: auto;
     width: 100%;
     background-repeat: no-repeat;
