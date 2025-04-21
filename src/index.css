@@ -549,9 +549,9 @@ body{
       height: 100dvh;
     }
 
-    .cover .content-container .content{
+    /* .cover .content-container .content{
       transform: translateY(-50px);
-    }
+    } */
 
     .cover .slider-container img {
       height: 140px;
