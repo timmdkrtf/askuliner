@@ -383,12 +383,12 @@ body{
   footer::before{
     content: "";
     position: absolute;
-    background-image: url('../src/assets/elemen/Untitled.png');
+    background-image: url('../src/assets/elemen/Untitled2.png');
     top: -30px;
     right: 0;
     background-size: contain;
     width: 250px;
-    height: 64px;
+    height: 63px;
     z-index: 2;
   }
 
@@ -659,7 +659,7 @@ body{
 
     footer::before{
       width: 200px;
-      height: 51px;
+      height: 50px;
     }
   }
 
