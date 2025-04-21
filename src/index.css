@@ -550,7 +550,7 @@ body{
     }
 
     .cover .content-container .content{
-      transform: translateY(-80px);
+      transform: translateY(-50px);
     }
 
     .cover .slider-container img {
