@@ -545,9 +545,9 @@ body{
 
   @media screen and (max-width: 576px) {
 
-    .cover{
+    /* .cover{
       height: 100dvh;
-    }
+    } */
 
     .cover .slider-container img {
       height: 140px;
