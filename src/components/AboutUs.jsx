@@ -1,4 +1,4 @@
-import RhamdaniPhoto from "../assets/image/photo/Frame 24.png"
+import AliPhoto from "../assets/image/photo/Frame 24.png"
 import DudiPhoto from "../assets/image/photo/Frame 23.png"
 
 export default function AboutUs(){
@@ -19,10 +19,10 @@ export default function AboutUs(){
                 </div>
                 <div className="content-right">
                     <div className="cover-image">
-                        <img src={RhamdaniPhoto} alt="" />
+                        <img src={AliPhoto} alt="" />
                     </div>
                     <div className="title">
-                        <h4>Andri Rhamdani</h4>
+                        <h4>Ali Sadikin</h4>
                         <h5>Direktur Utama</h5>
                     </div>
                 </div>
