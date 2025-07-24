@@ -105,7 +105,7 @@ body{
     color: #c80017;
     font-weight: 800;
     border-radius: 10px;
-    border-bottom: 4px solid #6495ed;
+    border-bottom: 4px solid #454545;
   }
 
   .about-pt{
@@ -116,11 +116,11 @@ body{
   .about-pt::before{
     content: "";
     position: absolute;
-    width: 213px;
-    height: 200px;
-    background-size: contain;
-    background-image: url('../src/assets/elemen/2.png');
-    transform: scaleY();
+    width: 100px;
+    height: 70px;
+    border-radius: 0 0 10px 0;
+    background-color: #FBB342;
+    box-shadow: 0 4px 0 0 #454545;
     top: 0;
     left: 0;
     z-index: -1;
@@ -129,12 +129,13 @@ body{
   .about-pt::after{
     content: "";
     position: absolute;
-    width: 150px;
-    height: 145px;
+    width: 140px;
+    height: 100px;
     bottom: 0;
     right: 0;
-    background-size: contain;
-    background-image: url('../src/assets/elemen/circle-14.png');
+    border-radius: 30px 0 0 0;
+    background-color: #c80017;
+    box-shadow: -8px 4px 0 0 #FBB342;
     z-index: -1;
   }
 
@@ -164,6 +165,7 @@ body{
   .about-pt .content .text p{
     font-family: "Open Sans", sans-serif;
     text-align: justify;
+    color: #454545;
   }
 
   .about-us{
@@ -197,7 +199,7 @@ body{
     margin: 0 auto 0 auto;
     padding: 20px 30px;
     position: relative;
-    color: #6495ed;
+    color: #454545;
     display: inline-block;
   }
 
@@ -259,7 +261,6 @@ body{
     margin: 5px 0 0 0;
     font-size: 20px;
     color: #454545;
-    opacity: 0.9;
   }
 
   .about-us .row .content-right{
@@ -305,7 +306,6 @@ body{
     margin: 7px 0 0 0 ;
     font-size: 20px;
     color: #454545;
-    opacity: 0.9;
   }
 
   .brand {
@@ -460,15 +460,15 @@ body{
     }
 
     .about-pt::before{
-      width: 140px;
-      height: 131px;
+      width: 100px;
+      height: 70px;
     }
 
     .about-pt::after{
       content: "";
       position: absolute;
       width: 110px;
-      height: 107px;
+      height: 70px;
     }
 
     .about-pt .content h2::before{
@@ -561,7 +561,7 @@ body{
 
     .about-pt::before{
       width: 115px;
-      height: 108px;
+      height: 60px;
     }
 
     .about-us .row .content-left{
